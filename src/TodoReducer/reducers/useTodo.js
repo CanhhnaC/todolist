@@ -23,6 +23,16 @@ export const reducer = (state, action) => {
     case "addTodo":
       return [newTodo(action.content), ...state];
 
+    case "editTodo":
+      return state.map((i) =>
+        i.id === action.id ? { ...i, content: action.content } : i
+      );
+
+    case "toggleDone":
+      return state.map((i) =>
+        i.id === action.id ? { ...i, done: !i.done } : i
+      );
+
     default:
       throw new Error();
   }
