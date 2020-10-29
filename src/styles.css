@@ -1,0 +1,17 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.App h1 {
+  color: rgba(175, 47, 47, 0.15);
+  text-align: center;
+  font-size: 100px;
+  font-weight: 100;
+}
+button[aria-pressed="true"] {
+  border: 1px solid rgba(175, 47, 47, 0.2) !important;
+}
