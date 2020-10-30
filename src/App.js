@@ -2,7 +2,6 @@ import React from "react";
 import EffectHooks from "./EffectHooks";
 import "./styles.css";
 import Todo from "./Todo";
-import TodoReducer from "./TodoReducer";
 
 const DATA = [
   { id: "todo-0", name: "Work", isCompleted: false },
@@ -15,7 +14,6 @@ export default function App() {
     <div className="App">
       <h1>todos</h1>
       <Todo tasks={DATA} />
-      <TodoReducer tasks={DATA} />
       <EffectHooks />
     </div>
   );
